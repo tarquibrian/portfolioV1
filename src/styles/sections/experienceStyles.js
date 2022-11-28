@@ -1,0 +1,115 @@
+import styled from "styled-components"
+
+export const ExperienceStyled = styled.section`
+  display: grid;
+  place-content: center;
+`
+
+export const ExperienceCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  max-width: 1000px;
+  border-radius: 4px;
+  font-family: "Calibre", sans-serif;
+  font-weight: normal;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 9;
+
+  h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    color: #eae2b7;
+    margin: 0 0 15px -4px;
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 0.2rem;
+    &::after {
+      content: "";
+      display: block;
+      align-self: end;
+      margin-bottom: 12px;
+      width: auto;
+      height: 3px;
+      background: #eae2b7;
+    }
+  }
+
+  P {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05)
+      linear-gradient(
+        to top right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 235, 0, 0.15)
+      );
+  }
+`
+
+export const CardContent = styled.div`
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+`
+
+export const ContentList = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const TabList = styled.div`
+  width: 150px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 2px;
+  position: relative;
+  background: ${({ isActive }) =>
+    isActive ? "rgba(234,226,176,.3)" : "transparent"};
+  /* background-color: rgba(0 0 0 / 0.3); */
+  /* transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) */
+  transition: 0.3s ease;
+
+  &:first-of-type {
+    &::after {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+  &:last-of-type {
+    &::after {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px;
+    height: 100%;
+    border-radius: ${({ isActive }) => (isActive ? "10px" : "0px")};
+    background-color: ${({ isActive }) =>
+      isActive ? "rgba(234,226,176,1)" : "rgba(234,226,176,.3)"};
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: ${({ isActive }) =>
+      isActive ? "rgba(234,226,176,.3)" : "rgba(234,226,176,.1)"};
+  }
+`
+
+export const ContentBody = styled.div``

@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Brian Tarqui Rojas`,
+    description: `Brian Tarqui es un ingeniero de sistemas que se enfoca en el desarrollo de aplicaciones web`,
+    author: `@tarquibrian`,
+    siteUrl: `https://briantarqui.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -16,6 +16,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
