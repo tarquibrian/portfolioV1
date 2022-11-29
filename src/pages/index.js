@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import { About, Nav, Layout, Experience } from "@components"
+import { About, Nav, Layout, Experience, Projects } from "@components"
 import { Hero } from "@components"
 import img from "../images/layer-min.png"
 
@@ -13,6 +13,7 @@ const Index = ({ location }) => {
         <Hero />
         <About />
         <Experience />
+        <Projects />
       </HomePageContect>
     </Layout>
   )

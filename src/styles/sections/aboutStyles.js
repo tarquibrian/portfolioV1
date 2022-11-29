@@ -2,8 +2,9 @@ import styled from "styled-components"
 
 export const AboutStyled = styled.section`
   /* background: rgba(0 0 0 / 0.2); */
-  color: white;
-  padding: 4rem 0;
+  color: #e5e5e5;
+  padding: initial;
+  padding-bottom: 100px;
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 2rem;
@@ -17,7 +18,7 @@ export const AboutCard = styled.div`
   flex-direction: column;
   max-width: 700px;
   border-radius: 4px;
-  font-family: "Calibre", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: normal;
   padding: 40px;
   background: rgba(255, 255, 255, 0.1);
@@ -46,7 +47,7 @@ export const AboutCard = styled.div`
   }
 
   P {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
   }
 

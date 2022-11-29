@@ -3,15 +3,16 @@ import styled from "styled-components"
 export const ExperienceStyled = styled.section`
   display: grid;
   place-content: center;
+  color: #e5e5e5;
 `
 
 export const ExperienceCard = styled.div`
   display: flex;
   flex-direction: column;
   min-width: 600px;
-  max-width: 1000px;
+  max-width: 850px;
   border-radius: 4px;
-  font-family: "Calibre", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: normal;
   padding: 40px;
   background: rgba(255, 255, 255, 0.1);
@@ -19,11 +20,12 @@ export const ExperienceCard = styled.div`
   backdrop-filter: blur(10px);
   z-index: 9;
 
-  h1 {
+  .headerTitle {
     font-family: "Oswald", sans-serif;
     font-size: 5rem;
     font-weight: 400;
     color: #eae2b7;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     margin: 0 0 15px -4px;
     display: grid;
     grid-template-columns: max-content auto;
@@ -56,8 +58,9 @@ export const ExperienceCard = styled.div`
 
 export const CardContent = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 200px 1fr;
   gap: 2rem;
+  margin-top: 1rem;
 `
 
 export const ContentList = styled.div`
@@ -66,10 +69,10 @@ export const ContentList = styled.div`
 `
 
 export const TabList = styled.div`
-  width: 150px;
+  min-width: 200px;
   height: 45px;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 50px 150px;
   align-items: center;
   gap: 2rem;
   border-radius: 2px;
@@ -79,6 +82,22 @@ export const TabList = styled.div`
   /* background-color: rgba(0 0 0 / 0.3); */
   /* transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) */
   transition: 0.3s ease;
+
+  h2,
+  h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    /* margin-top: 7px; */
+    color: ${({ isActive }) => (isActive ? "white" : "#e5e5e5")};
+  }
+  h2 {
+    /* background-color: red; */
+    justify-self: end;
+  }
+  h3 {
+    /* background-color: yellow; */
+    justify-self: start;
+  }
 
   &:first-of-type {
     &::after {
@@ -97,7 +116,7 @@ export const TabList = styled.div`
     content: "";
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 33%;
     width: 5px;
     height: 100%;
     border-radius: ${({ isActive }) => (isActive ? "10px" : "0px")};
@@ -112,4 +131,57 @@ export const TabList = styled.div`
   }
 `
 
-export const ContentBody = styled.div``
+export const ContentBody = styled.div`
+  /* background: rgba(0 0 0 / 0.2); */
+  border-radius: 4px;
+  .type {
+    font-size: 18px;
+    color: #cbc0d3;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    .entity {
+      font-weight: bold;
+      transition: 0.1s ease;
+      display: flex;
+      align-items: center;
+      svg {
+        margin-left: -2px;
+      }
+
+      &:hover {
+        color: white;
+        text-shadow: 0 0 5px rgba(255 255 255 / 0.5);
+      }
+    }
+  }
+  h1 {
+    font-size: var(--fz-xxl);
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    &:hover {
+      text-shadow: 0 0 5px rgba(255 255 255 / 0.5);
+    }
+  }
+  p {
+    font-size: var(--fz-lg);
+    color: #e5e5e5;
+    margin-bottom: 10px;
+  }
+  ul {
+    li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 10px;
+      margin-bottom: 5px;
+      &::before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: rgba(234, 226, 176, 1);
+      }
+    }
+  }
+`

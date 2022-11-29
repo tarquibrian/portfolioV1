@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react"
+import { ProjectsStyled } from "@styles"
 
 const Projects = () => {
-  return (
-    <div>Projects</div>
-  )
+  return <ProjectsStyled>
+    
+  </ProjectsStyled>
 }
 
 export default Projects

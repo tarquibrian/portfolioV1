@@ -3,7 +3,7 @@ import imgbg from "../../images/bg-primary1.png"
 export const HeroStyled = styled.section`
   height: 100vh;
   width: 100%;
-  color: white;
+  color: #e5e5e5;
   svg {
     overflow: hidden;
     fill: #ff101f;
@@ -38,7 +38,7 @@ export const CardHero = styled.div`
   flex-direction: column;
   max-width: 920px;
   border-radius: 4px;
-  font-family: "Calibre", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: normal;
   padding: 40px;
   background: rgba(255, 255, 255, 0.1);
@@ -70,12 +70,13 @@ export const CardHero = styled.div`
     /* color: #dfdfdf; */
     margin-left: -4px;
     color: transparent;
+    text-shadow: 0 0 5px rgba(255 255 255 / 1);
     -webkit-text-stroke: 1px white;
   }
 
   P {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: normal;
   }
 
   &:hover {

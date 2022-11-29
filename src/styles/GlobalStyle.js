@@ -18,15 +18,18 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
     list-style: none; 
     text-decoration: none;
-    /* transition: .1s ease; */
+    transition: .2s ease;
+  }
+
+  *::selection {
+    color: rgb(32, 180, 227);
+    background: rgba(29, 49, 71);
   }
 
   body {
     font-family: var(--font-primary);
     line-height: 1.2;
-    /* background: var(--bg-primary-B1); */
-    /* background: url(${img}) repeat; */
-/* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23d3a8a5' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
+    color: #e5e5e5;
     width: 100%;
     min-height: 100%;
     overflow-x: hidden;
@@ -47,8 +50,6 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
 
     padding: 100px 0;
-    /* width: 95%; */
-    /* background: #f8f8; */
   }
 
   a {
