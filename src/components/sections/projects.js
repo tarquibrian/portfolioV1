@@ -10,7 +10,7 @@ import { IconInstagram, IconExternal } from "@components"
 
 import imgProject from "../../images/project-img1.png"
 
-const title = <h1 className="headerTitle">Projects</h1>
+const title = <h1 className="headerTitle">.Projects</h1>
 
 const Projects = () => {
   return (
