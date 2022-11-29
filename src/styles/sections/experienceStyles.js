@@ -41,7 +41,7 @@ export const ExperienceCard = styled.div`
     }
   }
 
-  P {
+  p {
     font-size: 20px;
     font-weight: 400;
   }

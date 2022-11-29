@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: var(--font-primary);
+    font-family: var(--font-sans);
     line-height: 1.2;
     color: #e5e5e5;
     width: 100%;

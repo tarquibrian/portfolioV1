@@ -19,4 +19,4 @@ const IconInstagram = () => (
   </svg>
 )
 
-export default IconInstagram;
+export default IconInstagram
