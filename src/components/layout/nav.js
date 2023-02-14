@@ -31,7 +31,7 @@ const Nav = () => {
   )
 
   const Resume = (
-    <ResumeLink href='./resume.pdf' target="_blank" rel="noopener noreferrer">
+    <ResumeLink href="./resumeV1.pdf" target="_blank" rel="noopener noreferrer">
       Resume &gt;
     </ResumeLink>
   )
