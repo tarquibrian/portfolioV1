@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const SideStyle = styled.div`
-  min-width: 60px;
+  min-width: 100px;
   /* width: 3%; */
   position: fixed;
   bottom: 0;
@@ -47,27 +47,24 @@ export const SideStyle = styled.div`
 
   ol {
     z-index: 999;
-    width: 100%;
-    /* padding: 0 15px; */
+    /* width: 100%; */
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 10px; */
+    gap: 10px;
 
     li {
-      /* background-color: blue; */
       width: 100%;
       a {
         text-align: center;
         width: 100%;
-        /* color: rgb(30, 30, 30); */
-        color: white;
+        color: rgba(255, 255, 255, 1);
         padding: 6px 0;
+        transition: 0.2s ease;
         &:hover {
-          /* color: var(--white); */
-          color: rgb(30, 30, 30);
-          transform: translateX(5px);
+          /* color: rgba(255, 255, 255, 0.7); */
+          transform: scale(1.2);
         }
         svg {
           height: 24px;
@@ -88,9 +85,9 @@ export const SideStyle = styled.div`
       content: "";
       display: block;
       width: 1px;
-      height: 110px;
+      height: 40vh;
       margin: 0 auto;
-      background-color: white;
+      /* background-color: rgba(255, 255, 255, 0.5); */
     }
   }
 `

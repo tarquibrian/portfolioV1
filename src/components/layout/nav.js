@@ -22,10 +22,11 @@ const Nav = () => {
   const Links = (
     <LinksContainer>
       <ol>
+        <li>.About</li>
+        <li>.Experience</li>
+        <li>.Projects</li>
         <li>hola</li>
-        <li>hola</li>
-        <li>hola</li>
-        <li>hola</li>
+        <Link to="/asd">Adios</Link>
       </ol>
     </LinksContainer>
   )

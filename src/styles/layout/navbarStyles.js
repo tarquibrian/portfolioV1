@@ -16,7 +16,7 @@ export const NavbarHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   /* color: var(--fg-primary-F3); */
   /* background: var(--bg-primary-B1); */
   /* border: 1px solid var(--fg-primary-F3); */

@@ -15,12 +15,13 @@ import { GlobalStyle, BodyStyle } from "@styles"
 const Layout = ({ location, children }) => {
   const isHome = location.pathname === "/"
   const [isLoading, setIsLoading] = useState(isHome)
+  console.log({ isLoading })
 
   useEffect(() => {
     if (isLoading) {
       return
     }
-  }, [isLoading])
+  })
 
   return (
     <>
@@ -33,12 +34,11 @@ const Layout = ({ location, children }) => {
         ) : (
           <BodyStyle>
             <Nav />
-            {/* <Side /> */}
+            <Side />
             {/* <Email /> */}
             {children}
             {/* <BackgroundSVG /> */}
             <Footer />
-
             <BGPicture />
           </BodyStyle>
         )}

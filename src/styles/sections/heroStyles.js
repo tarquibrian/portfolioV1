@@ -77,6 +77,7 @@ export const CardHero = styled.div`
   P {
     font-size: 18px;
     font-weight: normal;
+    line-height: 1.5;
   }
 
   &:hover {

@@ -5,8 +5,11 @@ import img from "../../images/bg-primary.png"
 
 const Hero = () => {
   const afterTitle = <h1>Me presento, mi nombre es</h1>
+
   const Title = <h2>Brian Tarqui Rojas.</h2>
+
   const SubTitle = <h3>Construyo cosas para la web.</h3>
+
   const Description = (
     <p>
       Soy un ingeniero de sistemas que se enfoca en crear y diseñar aplicaciones
@@ -18,11 +21,6 @@ const Hero = () => {
       proceso).
     </p>
   )
-
-  useEffect(() => {
-    let posicion = window.pageYOffset || document.documentElement.scrollTop
-    console.log("posicion", posicion)
-  }, [])
 
   return (
     <>

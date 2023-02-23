@@ -6,18 +6,22 @@ const Side = () => {
   const Social = (
     <ol>
       <li>
-        <a href="https://github.com/tarquibrian" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/tarquibrian"
+          target="_blank"
+          rel="noreferrer"
+        >
           <IconGitHub />
         </a>
       </li>
       <li>
         <a href="/" target="_blank" rel="noreferrer">
-          <IconInstagram/>
+          <IconInstagram />
         </a>
       </li>
-      <li >
+      <li>
         <a href="/" target="_blank" rel="noreferrer">
-          <IconLinkedIn/>
+          <IconLinkedIn />
         </a>
       </li>
       <li>
@@ -28,14 +32,7 @@ const Side = () => {
     </ol>
   )
 
-  return (
-    <SideStyle>
-      <div className="rectangle"></div>
-      <div className="rectangle2"></div>
-      <div className="rectangle3"></div>
-      {Social}
-    </SideStyle>
-  )
+  return <SideStyle>{Social}</SideStyle>
 }
 
 export default Side
